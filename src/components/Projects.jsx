@@ -81,13 +81,13 @@ const ProjectGallery = () => {
   });
 
   return (
-    <div className="min-h-screen p-6 md:pt-30 md:p-12 bg-[#0a0a0a]  text-white">
+    <div className="min-h-screen p-6 pt-30 md:pt-28 md:p-12 bg-[#12121a] text-white">
       <div className="max-w-7xl mx-auto">
         {/* Animated Header */}
         
 
         {/* Filters with Icons */}
-        <div className="flex overflow-x-auto pr-10 px-10 md:justify-center gap-3 mb-12">
+        <div className="flex overflow-x-auto  px-5 md:justify-center gap-3 mb-12">
           {["all", "major", "minor", "react", "nextjs", "ui/ux"].map((filter) => (
             <motion.button
               key={filter}
@@ -164,14 +164,14 @@ const ProjectGallery = () => {
                           <FaTag className="mr-2" />
                           {project.technology}
                         </span>
-                        <a 
+                        <div 
                           href={project.link} 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="text-white hover:text-[#4D55CC] transition-colors"
                         >
                           <FaLink size={20} />
-                        </a>
+                        </div>
                       </div>
                       <h3 className="text-xl font-bold mb-1 text-white">{project.title}</h3>
                       <p className="text-gray-300 text-sm mb-2">{project.description}</p>
