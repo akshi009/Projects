@@ -14,17 +14,17 @@ function Header() {
   const socialLinks = [
     { 
       icon: <FaGithub />, 
-      href: "https://github.com/yourusername", 
+      href: "https://github.com/akshi009", 
       color: "hover:text-gray-200" 
     },
     { 
       icon: <FaLinkedin />, 
-      href: "https://linkedin.com/in/yourusername", 
+      href: "https://www.linkedin.com/in/akshi-jain-270631202/", 
       color: "hover:text-blue-500" 
     },
     { 
       icon: <FaBehance />, 
-      href: "https://behance.net/yourusername", 
+      href: "https://www.behance.net/akshijain7", 
       color: "hover:text-blue-600" 
     }
   ];
