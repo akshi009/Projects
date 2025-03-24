@@ -54,7 +54,7 @@ function Header() {
       {/* Social Media Icons */}
       <div className="flex items-center gap-4">
         {socialLinks.map((social, index) => (
-          <motion.div
+          <motion.a
             key={index}
             href={social.href}
             target="_blank"
@@ -70,7 +70,7 @@ function Header() {
             whileTap={{ scale: 0.9 }}
           >
             {social.icon}
-          </motion.div>
+          </motion.a>
         ))}
       </div>
     </header>
