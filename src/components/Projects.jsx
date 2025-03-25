@@ -1,7 +1,7 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
-import { FaFilter, FaLink, FaTag } from "react-icons/fa";
+import { FaFilter, FaLink } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const ProjectGallery = () => {
@@ -124,15 +124,11 @@ const ProjectGallery = () => {
                   onMouseLeave={() => setHoveredProject(null)}
                   className="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 "
                 >
-                  <Link 
-                    to={project.link || '#'} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="block h-full"
-                  >
+                 
                     {/* Image Container with Hover Effects */}
                     <div className="relative h-64 w-full overflow-hidden">
                       <div className={`absolute inset-0 ${project.bgColor} opacity-50 z-10`} />
+                      
                       
                       <img
                         src={project.image}
@@ -150,6 +146,7 @@ const ProjectGallery = () => {
                       >
                         <span className="text-xl font-bold">{project.title}</span>
                       </div>
+                      <div className="absolute right-0 top-0 bg-gray-700/80 p-2">{project.technology}</div>
                     </div>
                     
                     {/* Detailed Project Overlay */}
@@ -159,21 +156,27 @@ const ProjectGallery = () => {
                       ${hoveredProject === project.id ? 'opacity-100' : 'opacity-0'}
                       transition-opacity duration-300 z-20
                     `}>
-                      <div className="flex justify-between items-end mb-2">
-                        <span className="px-2 py-1 bg-white/20 rounded-full text-xs uppercase tracking-wider flex items-center">
+                      <div >
+                        {/* <span className="px-2 py-1 bg-white/20 rounded-full text-xs uppercase tracking-wider flex items-center">
                           <FaTag className="mr-2" />
                           {project.technology}
-                        </span>
-                        <div 
-                          href={project.link} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-white hover:text-[#4D55CC] transition-colors"
-                        >
+                        </span> */}
+                        <div className="flex justify-between">
+                        <h3 className="text-xl font-bold mb-1 text-white">{project.title}</h3>
+                        <div className="text-white hover:text-[#4D55CC] transition-colors">
+                           <Link 
+                    to={project.link || '#'} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="gap-2 h-full flex"
+                  >
                           <FaLink size={20} />
+                          LINK
+                          </Link>
                         </div>
                       </div>
-                      <h3 className="text-xl font-bold mb-1 text-white">{project.title}</h3>
+                      
+                      </div>
                       <p className="text-gray-300 text-sm mb-2">{project.description}</p>
                       
                       {/* Project Features */}
@@ -188,7 +191,7 @@ const ProjectGallery = () => {
                         ))}
                       </div>
                     </div>
-                  </Link>
+                 
                 </motion.div>
               ))
             ) : (
