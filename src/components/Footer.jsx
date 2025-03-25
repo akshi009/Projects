@@ -39,7 +39,7 @@ function Footer() {
   };
 
   return (
-    <div className='mt-10'>
+    <div>
       <div 
         className="bg-gray-900 md:fixed bottom-0 w-full transition-all duration-500 py-3"
         style={{ 
