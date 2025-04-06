@@ -41,7 +41,7 @@ function Footer() {
   return (
     <div className='z-50'>
       <div 
-        className="bg-gray-950  z-50  w-full transition-all duration-500 py-3"
+        className="bg-gray-950 absolute z-50  w-full transition-all duration-500 py-3"
         style={{ 
           height: hoverFooter ? '60px' : '60px',
         }}

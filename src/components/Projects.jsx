@@ -94,7 +94,7 @@ const ProjectGallery = () => {
 
   return (
     <div className=" pb-10 p-6 pt-30 md:pt-28 md:p-12 bg-[#12121a] text-white">
-      <div className="max-w-8xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Animated Header */}
         
 
@@ -123,7 +123,7 @@ const ProjectGallery = () => {
 
         {/* Projects Grid with Animations */}
         <AnimatePresence>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:m-20 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 mb-20 lg:grid-cols-3 gap-10">
             {filteredProjects.length > 0 ? (
               filteredProjects.map((project) => (
                 <motion.div
