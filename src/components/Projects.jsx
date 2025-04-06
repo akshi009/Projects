@@ -57,6 +57,18 @@ const ProjectGallery = () => {
     },
     {
       id: 5,
+      title: "Case Study: Google News with a “Take a Quiz” Feature",
+      description: "UX Case Study",
+      link: "https://www.behance.net/gallery/223073755/Case-Study-Google-News-with-a-Take-a-Quiz-Feature",
+      image: "/GoogleNews.png",
+      category: "major",
+      technology: "ui/ux",
+      gradient: "from-orange-400 to-yellow-500",
+      
+      features: ["Visual Design", "User Research", "User Experience Enhancement"]
+    },
+    {
+      id: 6,
       title: "Figma Portfolio",
       description: "Design Collection",
       link: "https://www.figma.com/@akshi",
@@ -81,8 +93,8 @@ const ProjectGallery = () => {
   });
 
   return (
-    <div className="min-h-screen p-6 pt-30 md:pt-28 md:p-12 bg-[#12121a] text-white">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen mb-20 pb-10 p-6 pt-30 md:pt-28 md:p-12 bg-[#12121a] text-white">
+      <div className="max-w-8xl mx-auto">
         {/* Animated Header */}
         
 
@@ -111,7 +123,7 @@ const ProjectGallery = () => {
 
         {/* Projects Grid with Animations */}
         <AnimatePresence>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {filteredProjects.length > 0 ? (
               filteredProjects.map((project) => (
                 <motion.div
