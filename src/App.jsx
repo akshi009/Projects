@@ -7,7 +7,7 @@ function App() {
 
 
   return (
-   <div className='bg-[#0A0A0A] h-screen'>
+   <div className='bg-[#12121a] h-screen'>
     <Header/>
     <ProjectGallery/>
     <Footer/>

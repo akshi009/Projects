@@ -39,11 +39,11 @@ function Footer() {
   };
 
   return (
-    <div>
+    <div className='z-50'>
       <div 
-        className="bg-gray-900 md:fixed bottom-0 w-full transition-all duration-500 py-3"
+        className="bg-gray-950  z-50  w-full transition-all duration-500 py-3"
         style={{ 
-          height: hoverFooter ? '40px' : '40px',
+          height: hoverFooter ? '60px' : '60px',
         }}
         onMouseEnter={() => setHoverFooter(true)}
         onMouseLeave={() => setHoverFooter(false)}

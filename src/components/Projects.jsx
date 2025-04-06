@@ -20,16 +20,16 @@ const ProjectGallery = () => {
       features: ["Collaborative Writing", "Story Management", "User Profiles"]
     },
     {
-      id: 2,
-      title: "Portfolio",
-      description: "Modern & Responsive Showcase",
-      link: "https://my-portfolio-kohl-theta-49.vercel.app/",
-      image: "/portfolio.png",
+      id: 5,
+      title: "Case Study: Google News with a “Take a Quiz” Feature",
+      description: "UX Case Study",
+      link: "https://www.behance.net/gallery/223073755/Case-Study-Google-News-with-a-Take-a-Quiz-Feature",
+      image: "/GoogleNews.png",
       category: "major",
-      technology: "nextjs",
-      gradient: "from-blue-500 to-cyan-400",
+      technology: "ui/ux",
+      gradient: "from-orange-400 to-yellow-500",
       
-      features: ["Responsive Design", "Interactive Sections", "Modern UI"]
+      features: ["Visual Design", "User Research", "User Experience Enhancement"]
     },
     {
       id: 3,
@@ -44,6 +44,18 @@ const ProjectGallery = () => {
       features: ["Task Tracking", "Collaborative Planning", "Priority Management"]
     },
     {
+      id: 2,
+      title: "Portfolio",
+      description: "Modern & Responsive Showcase",
+      link: "https://my-portfolio-kohl-theta-49.vercel.app/",
+      image: "/portfolio.png",
+      category: "major",
+      technology: "nextjs",
+      gradient: "from-blue-500 to-cyan-400",
+      
+      features: ["Responsive Design", "Interactive Sections", "Modern UI"]
+    },
+    {
       id: 4,
       title: "Decathlon Review",
       description: "UX Case Study",
@@ -54,18 +66,6 @@ const ProjectGallery = () => {
       gradient: "from-pink-500 to-rose-500",
       
       features: ["User Research", "Wireframing", "Design Critique"]
-    },
-    {
-      id: 5,
-      title: "Case Study: Google News with a “Take a Quiz” Feature",
-      description: "UX Case Study",
-      link: "https://www.behance.net/gallery/223073755/Case-Study-Google-News-with-a-Take-a-Quiz-Feature",
-      image: "/GoogleNews.png",
-      category: "major",
-      technology: "ui/ux",
-      gradient: "from-orange-400 to-yellow-500",
-      
-      features: ["Visual Design", "User Research", "User Experience Enhancement"]
     },
     {
       id: 6,
@@ -93,7 +93,7 @@ const ProjectGallery = () => {
   });
 
   return (
-    <div className="min-h-screen mb-20 pb-10 p-6 pt-30 md:pt-28 md:p-12 bg-[#12121a] text-white">
+    <div className=" pb-10 p-6 pt-30 md:pt-28 md:p-12 bg-[#12121a] text-white">
       <div className="max-w-8xl mx-auto">
         {/* Animated Header */}
         
@@ -123,7 +123,7 @@ const ProjectGallery = () => {
 
         {/* Projects Grid with Animations */}
         <AnimatePresence>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:m-20 lg:grid-cols-3 gap-10">
             {filteredProjects.length > 0 ? (
               filteredProjects.map((project) => (
                 <motion.div
