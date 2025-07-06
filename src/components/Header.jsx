@@ -37,8 +37,8 @@ function Header() {
       <Link to="/" className="focus:outline-none">
         <motion.div
           whileHover={{ 
-            scale: 1.1,
-            rotate: [0, -10, 10, 0],
+            // scale: 1.1,
+            // rotate: [0, -10, 10, 0],
             transition: { duration: 0.5 }
           }}
           whileTap={{ scale: 0.95 }}

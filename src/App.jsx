@@ -10,7 +10,7 @@ function App() {
    <div className='bg-[#12121a] h-screen'>
     <Header/>
     <ProjectGallery/>
-    <Footer/>
+    {/* <Footer/> */}
     </div>
   )
 }
